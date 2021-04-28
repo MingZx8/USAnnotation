@@ -101,6 +101,11 @@ Vehicle | aeroplane, bicycle, boat, `bus`, `car`, motorbike, `train`
 Indoor | bottle, chair, dining table, potted plant, sofa, tv/monitor
 
 
+## Example
+![Example](https://github.com/MingZx8/UrbanScannerAnnotation/blob/main/example/Example.png)
+
+
+
 ## Sampling
 + 1.5 images/hour
   
