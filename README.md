@@ -101,10 +101,11 @@ Vehicle | aeroplane, bicycle, boat, `bus`, `car`, motorbike, `train`
 Indoor | bottle, chair, dining table, potted plant, sofa, tv/monitor
 
 
-# Sampling
+## Sampling
 + 1.5 images/hour
   
-+ Number of images? 400-600   
++ Number of images? 
+  + 400-600 (20% for validation, 80% for training)   
 
 + Location (Route)
   
@@ -125,3 +126,57 @@ Indoor | bottle, chair, dining table, potted plant, sofa, tv/monitor
   + Noon
   + Afternoon
 
+## Annotation format
+The Django-Labeller generates .json file that looks like:    
+```
+{
+  "image_filename": "camera1599829394413.jpeg",
+  "completed_tasks": [
+    "finished"
+  ],
+  "labels": [
+    {
+      "label_type": "polygon",
+      "label_class": "car",
+      "source": "manual",
+      "anno_data": {},
+      "regions": [
+        [
+          {
+            "x": 35.68219718867216,
+            "y": 100
+          },
+          {
+            "x": 35.0579373995799,
+            "y": 100
+          },
+          ...
+        ]
+      ],
+      "object_id": "58aeb42d-47be-4d5e-a5ae-c2f492719b6c__1"
+    },
+    ...
+```
+The CityScape Datasets provides .json file that looks like:     
+```
+{
+    "imgHeight": 1024, 
+    "imgWidth": 2048, 
+    "objects": [
+        {
+            "label": "sky", 
+            "polygon": [
+                [
+                    64, 
+                    0
+                ], 
+                [
+                    99, 
+                    74
+                ], 
+                ...
+            ]
+        }, 
+        ...
+```
+It should determine what format to use in our case.
