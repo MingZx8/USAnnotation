@@ -107,7 +107,8 @@ Indoor | bottle, chair, dining table, potted plant, sofa, tv/monitor
 
 
 ## Sampling
-+ 1.5 images/hour
++ 1.5 images/hour (fine annotation)
++ 3+ images/hour (coarse annotation)
   
 + Number of images? 
   + 400-600 (20% for validation, 80% for training)   
