@@ -58,7 +58,7 @@ The classes in grey boxes need to be labelled in our scenario. Here are the deta
 ###### Please also note the labeling policy:   
 Labeled foreground objects must never have holes, i.e. if there is some background visible ‘through’ some foreground object, it is considered to be part of the foreground. This also applies to regions that are highly mixed with two or more classes: they are labeled with the foreground class. Examples: tree leaves in front of house or sky (everything tree), transparent car windows (everything car).
 
-## Annotation tool for pixel-level semantic labeling
+## Labelling tool for pixel-level semantic segmentation
 Github repository: [django-labeller](https://github.com/Britefury/django-labeller)  
     
 **Installation recommendation**:    
