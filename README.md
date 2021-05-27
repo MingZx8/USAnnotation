@@ -1,17 +1,17 @@
 # UrbanScannerAnnotation: Image processing
 
 ## Architecture for semantic segmentation
-Benchmark: [Real-time semantic segmentation on CityScapes Dataset](https://paperswithcode.com/sota/real-time-semantic-segmentation-on-cityscapes) 
+**Benchmark**: [Real-time semantic segmentation on CityScapes Dataset](https://paperswithcode.com/sota/real-time-semantic-segmentation-on-cityscapes) 
 
-1. 
+1. 2021  
 Paper: [Full-Resolution Residual Networks for Semantic Segmentation in Street Scenes](https://arxiv.org/abs/1611.08323)    
 Github repository: [FRRN](https://github.com/hiwonjoon/tf-frrn)      
 
-2. May 27, 2021
-Paper: [Deep Dual-resolution Networks for Real-time and Accurate Semantic Segmentation of Road Scenes](https://arxiv.org/abs/2101.06085v1)
-Github repo: [DDRNet-23-slim](https://github.com/ydhongHIT/DDRNet) pre-trained model included
-Architecture Github repo 1: [DDRNet](https://github.com/chenjun2hao/DDRNet.pytorch)
-Architecture Github repo 2: [HRNet](https://github.com/HRNet/HRNet-Semantic-Segmentation/tree/pytorch-v1.1)
+2. May 27, 2021  
+Paper: [Deep Dual-resolution Networks for Real-time and Accurate Semantic Segmentation of Road Scenes](https://arxiv.org/abs/2101.06085v1)  
+Github repo: [DDRNet-23-slim](https://github.com/ydhongHIT/DDRNet) pre-trained model included  
+Architecture Github repo 1: [DDRNet](https://github.com/chenjun2hao/DDRNet.pytorch)  
+Architecture Github repo 2: [HRNet](https://github.com/HRNet/HRNet-Semantic-Segmentation/tree/pytorch-v1.1)  
 
 
 This approach trained and tested on [CityScapes Dataset](https://www.cityscapes-dataset.com/dataset-overview/), which includes 30 classes:  
