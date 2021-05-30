@@ -14,7 +14,7 @@ Architecture Github repo 1: [DDRNet](https://github.com/chenjun2hao/DDRNet.pytor
 Architecture Github repo 2: [HRNet](https://github.com/HRNet/HRNet-Semantic-Segmentation/tree/pytorch-v1.1)  
 
 
-This approach trained and tested on [CityScapes Dataset](https://www.cityscapes-dataset.com/dataset-overview/), which includes 30 classes:  
+This approach trained and tested on [CityScapes Dataset](https://www.cityscapes-dataset.com/dataset-overview/) ([Git repo](https://github.com/mcordts/cityscapesScripts)), which includes 30 classes:  
 
 Group | Classes
 --- | --- 
