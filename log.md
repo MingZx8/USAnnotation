@@ -29,3 +29,8 @@ Options:
 2. Pad the image
 ![pad](https://github.com/MingZx8/UrbanScannerAnnotation/blob/main/example/pad.jpeg)
 ![pad result](https://github.com/MingZx8/UrbanScannerAnnotation/blob/main/example/pad_result.png)
+
+### 11-14 June, 2021
+##### 300 labelled images  
+Check and caclulate ratio of labelled classes in the images
++ unclassified polygon
