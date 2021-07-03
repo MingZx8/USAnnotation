@@ -38,12 +38,12 @@ Check and caclulate ratio of labelled classes in the images
 
 ### July, 2021
 #### Real-time object detection on COCO: [YOLO4](https://github.com/AlexeyAB/darknet) 
-1. clone repo
-2. modify 'Makefile'
-  a. `GPU=1` to enable GPU
-  b. `CUDNN=1` to enable CUDA (CUDA = 10.1 on Ubuntu 18.04, `export LD_LIBRARY_PATH=/usr/local/lib:/usr/local/cuda/lib64 && sudo ldconfig`)
-  c. `CUDNN_HALF=1` for acceleration
-  d. `OPENCV=1` to enable opencv
-  e. `NVCC=/usr/local/cuda/bin/nvcc`
-3. go to `src/image.c`
-  a. add `printf("%d %d %d %d\n",x1, x2, y1, y2);` to `void draw_box_width` to print bbox
+1. clone repo  
+2. modify 'Makefile'  
+  a. `GPU=1` to enable GPU  
+  b. `CUDNN=1` to enable CUDA (CUDA = 10.1 on Ubuntu 18.04, `export LD_LIBRARY_PATH=/usr/local/lib:/usr/local/cuda/lib64 && sudo ldconfig`)  
+  c. `CUDNN_HALF=1` for acceleration  
+  d. `OPENCV=1` to enable opencv  
+  e. `NVCC=/usr/local/cuda/bin/nvcc`  
+3. go to `src/image.c`  
+  a. add `printf("%d %d %d %d\n",x1, x2, y1, y2);` to `void draw_box_width` to print bbox  
