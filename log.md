@@ -50,5 +50,10 @@ Check and caclulate ratio of labelled classes in the images
 4. ```./darknet detector test cfg/coco.data cfg/yolov4.cfg yolov4.weights -dont_show < test.txt > result.txt```
 
 #### Object detection labelling: [labelImg](https://github.com/tzutalin/labelImg)
+check the presentation
 
-
+#### DDRNet training
+1. gathering images and json files
+2. crop images and changes the bbox correspondingly
+  1. 3 sizes of images: 320\*1900, 1080\*1920 (validated: 380~700\*1920), 360\*1900 (validated: 20~340\*1900)
+3. 
