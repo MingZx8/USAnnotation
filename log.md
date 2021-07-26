@@ -53,7 +53,31 @@ Check and caclulate ratio of labelled classes in the images
 check the presentation
 
 #### DDRNet training
-1. gathering images and json files
-2. crop images and changes the bbox correspondingly
-  1. 3 sizes of images: 320\*1900, 1080\*1920 (validated: 380~700\*1920), 360\*1900 (validated: 20~340\*1900)
-3. 
+\----------------------------------------------------------------  
+gathering images and json files  
+
+\----------------------------------------------------------------  
+crop images and changes the bbox correspondingly  
+3 sizes of images: 
++ 320\*1900
++ 1080\*1920 (validated: 380~700\*1920)
++ 360\*1900 (validated: 20~340\*1900)  
+
+designated size: 320\*1900  
+
+\----------------------------------------------------------------  
+replace class 'on_rails' with 'train'  
+
+\----------------------------------------------------------------  
+generate id images for training  
+
+\----------------------------------------------------------------  
+generate train list  
+
+\----------------------------------------------------------------  
+parameters mentioned in the paper:  
+![cityscapes](https://github.com/MingZx8/USAnnotation/blob/main/example/CityScapes.png)  
+![camvid](https://github.com/MingZx8/USAnnotation/blob/main/example/CamVid.png)  
+
+\----------------------------------------------------------------  
+configure  
