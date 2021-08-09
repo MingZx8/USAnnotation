@@ -36,7 +36,7 @@ Test image:
 Check and caclulate ratio of labelled classes in the images
 + unclassified polygon
 
-### July, 2021
+### July-August, 2021
 #### Real-time object detection on COCO: [YOLO4](https://github.com/AlexeyAB/darknet) 
 1. clone repo  
 2. modify 'Makefile'  
@@ -57,19 +57,22 @@ check the presentation
 gathering images and json files  
 
 \----------------------------------------------------------------  
-crop images and changes the bbox correspondingly  
-3 sizes of images: 
-+ 320\*1900
-+ 1080\*1920 (validated: 380~700\*1920)
-+ 360\*1900 (validated: 20~340\*1900)  
+the polygon should be separated, not united as multipolygon
 
-designated size: 320\*1900  
+\----------------------------------------------------------------  
+crop images and changes the label polygon correspondingly  
+3 sizes of images (should be times of 32, resize to 320\*1920): 
++ 320\*1900 (0, 'jpeg')
++ 1080\*1920 (1, 'image', validated: 380~700\*1920)
++ 360\*1900 (-1, 'camera, jpg', validated: 20~340\*1900)  
+
+designated size: 320\*1920  
 
 \----------------------------------------------------------------  
 replace class 'on_rails' with 'train'  
 
 \----------------------------------------------------------------  
-generate id images for training  
+generate id images for training (json2labelImg.py in cityscapesScripts/preparation)  
 
 \----------------------------------------------------------------  
 generate train list  
@@ -81,3 +84,8 @@ parameters mentioned in the paper:
 
 \----------------------------------------------------------------  
 configure  
+
+\----------------------------------------------------------------  
+```
+python -m torch.distributed.launch --nproc_per_node=2 tools/train.py --cfg experiments/cityscapes/ddrnet23.yaml
+```
