@@ -89,3 +89,6 @@ configure
 ```
 python -m torch.distributed.launch --nproc_per_node=2 tools/train.py --cfg experiments/cityscapes/ddrnet23.yaml
 ```
+```
+CUDA_AVAILABLE_DEVICES=0 python -m torch.distributed.launch --nproc_per_node=2 tools/train.py --cfg experiments/cityscapes/ddrnet23.yaml
+```
