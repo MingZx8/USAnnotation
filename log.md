@@ -48,6 +48,7 @@ Check and caclulate ratio of labelled classes in the images
 3. go to `src/image.c`  
   a. add `printf("%d %d %d %d\n",x1, x2, y1, y2);` to `void draw_box_width` to print bbox  
 4. ```./darknet detector test cfg/coco.data cfg/yolov4.cfg yolov4.weights -dont_show < test.txt > result.txt```
+5. ```./darknet detector train data/obj.data cfg/yolov4x-mish_custom.cfg yolov4-obj_best.weights -map -gpus 02>&1 | tee -a log_mish.txt```
 
 #### Object detection labelling: [labelImg](https://github.com/tzutalin/labelImg)
 check the presentation
