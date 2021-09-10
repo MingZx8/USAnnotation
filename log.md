@@ -93,3 +93,25 @@ python -m torch.distributed.launch --nproc_per_node=2 tools/train.py --cfg exper
 ```
 CUDA_AVAILABLE_DEVICES=0 python -m torch.distributed.launch --nproc_per_node=2 tools/train.py --cfg experiments/cityscapes/ddrnet23.yaml
 ```
+
+### Sep 2021
+#### quality check
+##### Semantic segmentation
+|       | 2020 | 2021 Spring | 2021 Summer | Total |
+| ----- | ---- | ----------- | ----------- | ----- |
+| Junwon | `102` | `100` | `104` | `306` |
+| James | 104 | 118 | 105 | 327 |
+| Yazan | 104 | 100 | 104 | 308 |
+
+|       | Truck | 
+| ----- | ---- | 
+| Junwon | `74` | 
+| James | `73` |
+| Yazan | 72 |
+
+##### Object Detection
+|       | Truck | 
+| ----- | ---- | 
+| Junwon | `644`/1000 | 
+| James | `983` |
+| Yazan | 990 |
