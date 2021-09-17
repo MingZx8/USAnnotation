@@ -100,7 +100,7 @@ CUDA_AVAILABLE_DEVICES=0 python -m torch.distributed.launch --nproc_per_node=2 t
 |       | 2020 | 2021 Spring | 2021 Summer | Total |
 | ----- | ---- | ----------- | ----------- | ----- |
 | Junwon | `102` | `100` | `104` | `306` |
-| James | 104 | 118 | 105 | 327 |
+| James | `30`/104 | `7`/118 | `105`/105 | `152`/327 |
 | Yazan | 104 | 100 | 104 | 308 |
 
 |       | Truck | 
