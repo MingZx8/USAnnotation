@@ -1,3 +1,25 @@
+# 2021-09-17
+##### slim model
+##### 6220 epoch
+##### 66.59% (12 classes)
+##### 42.06% (19 classes)
+
+| Class | Best IoU |
+| ----------- | ----------- |
+| Road | 92.95% |
+| Sky | 90.39% |
+| Terrain | 73.13% |
+| Vegetation | 78.68% |
+| Car | 75.53% |
+| Building | 67.54% |
+| Truck | 59.14% |
+| Sidewalk | 55.53% |
+| Train (Tram) | 53.81% |
+| Rider | 48.97% |
+| Bus | 76.63% |
+| Person | 26.81% |
+
+
 # 2021-09-09
 ##### 7051 epoch
 ##### 59.42% mIoU (12 classes)
