@@ -1,5 +1,45 @@
 # 2021-09-17
 ##### slim model
+##### 6200 epoch
+##### 65.00% (12 classes)
+##### 41.05% (19 classes)
+
+| Class | Best IoU |
+| ----------- | ----------- |
+| Road | 93.34% |
+| Sky | 88.54% |
+| Terrain | 80.25% |
+| Vegetation | 78.86% |
+| Car | 70.17% |
+| Building | 68.39% |
+| Truck | 60.04% |
+| Sidewalk | 56.34% |
+| Train (Tram) | 54.73% |
+| Rider | 25.22% |
+| Bus | 77.21% |
+| Person | 26.90% |
+
+# 2021-09-17
+##### slim model
+##### 10k epoch
+##### 67.27% (12 classes)
+##### 42.29% (19 classes)
+
+| Class | Best IoU |
+| ----------- | ----------- |
+| Road | 93.21% |
+| Sky | 90.89% |
+| Terrain | 73.25% |
+| Vegetation | 78.54% |
+| Car | 77.57% |
+| Building | 66.08% |
+| Truck | 58.34% |
+| Sidewalk | 54.76% |
+| Train (Tram) | 68.72% |
+| Rider | 41.03% |
+| Bus | 78.05% |
+| Person | 26.81% |
+
 ##### 6220 epoch
 ##### 66.59% (12 classes)
 ##### 42.06% (19 classes)
@@ -18,7 +58,6 @@
 | Rider | 48.97% |
 | Bus | 76.63% |
 | Person | 26.81% |
-
 
 # 2021-09-09
 ##### 7051 epoch
