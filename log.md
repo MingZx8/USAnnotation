@@ -115,3 +115,36 @@ CUDA_AVAILABLE_DEVICES=0 python -m torch.distributed.launch --nproc_per_node=2 t
 | Junwon | `644`/1000 | 
 | James | `983` |
 | Yazan | 990 |
+
+
+### Oct 2021
+#### Object detection
+1543 valid images.  
+seed(12)   
+1232/311 -> train/val.  
+
+##### yolo4x-mish (640*\640)
+1. [pre-trained weights:](https://drive.google.com/file/d/1JKF-bdIklxOOVy-2Cr5qdvjgGpmGfcbp/view)
+2. edit '.cfg':
+3. change line batch to `batch=64`
+4. change line subdivisions to `subdivisions=16` (depends on the GPU capacity)
+5. change line `max_batches` to (classes*2000, but not less than number of training images and not less than 6000), f.e. max_batches=6000 if you train for 3 classes: 10 \* 2000
+6. change line steps to 80% and 90% of max_batches, f.e. `steps=4800,5400`
+7. set network size width=416 height=416 or any value multiple of 32
+8. change line classes=80 to your number of objects in each of 3 [yolo]-layers
+9. change [filters=255] to filters=(classes + 5)x3 in the 3 [convolutional] before each [yolo] layer, keep in mind that it only has to be the last [convolutional] before each of the [yolo] layers.
+10. ~~when using [Gaussian_yolo] layers, change [filters=57] filters=(classes + 9)x3 in the 3 [convolutional] before each [Gaussian_yolo] layer~~
+11. Create file obj.names in the directory build\darknet\x64\data\, with objects names - each in new line
+12. Create file obj.data in the directory build\darknet\x64\data\, containing (where classes = number of objects)```classes = 2  
+train  = data/train.txt  
+valid  = data/test.txt  
+names = data/obj.names  
+backup = backup/```
+
+##### imporvement
+1. for training for small objects (smaller than 16x16 after the image is resized to 416x416) - set layers = 23 instead of L895 (L1046 in mish)
+2. set stride=4 instead of L892 (L1043)
+3. set stride=4 instead of L989 (L1184)
+4. 
+
+
